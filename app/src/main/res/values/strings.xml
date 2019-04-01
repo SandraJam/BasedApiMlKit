@@ -3,4 +3,8 @@
     <string name="classification_eyes">Classification - eyes</string>
     <string name="face_contours">Face contours</string>
     <string name="language_identification">Language identification</string>
+    <string name="chat_as_megumin">Chat as Megumin</string>
+    <string name="chat_as_aqua">Chat as Aqua</string>
+    <string name="message">Message...</string>
+    <string name="send">Send</string>
 </resources>

@@ -7,4 +7,43 @@
         android:layout_height="match_parent"
         tools:context=".SmartReplyActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/messageTextInputLayout"
+            tools:listitem="@layout/item_chat"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/messageTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/sendButton"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/message"
+                android:id="@+id/messageEditText"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/send"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/messageTextInputLayout"
+            app:layout_constraintBottom_toBottomOf="@id/messageTextInputLayout"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

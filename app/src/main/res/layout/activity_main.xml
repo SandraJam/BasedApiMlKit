@@ -39,20 +39,32 @@
             android:layout_height="wrap_content"
             android:background="@color/pink_one"
             android:layout_margin="16dp"
-            app:layout_constraintBottom_toTopOf="@id/chatButton"
+            app:layout_constraintBottom_toTopOf="@id/chatAquaButton"
             app:layout_constraintTop_toBottomOf="@id/faceContourButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-            android:id="@+id/chatButton"
-            android:text="@string/language_identification"
+            android:id="@+id/chatAquaButton"
+            android:text="@string/chat_as_aqua"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow_one"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/chatMeguminButton"
+            app:layout_constraintTop_toBottomOf="@id/languageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+            android:id="@+id/chatMeguminButton"
+            android:text="@string/chat_as_megumin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@color/yellow_one"
             android:layout_margin="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/languageButton"
+            app:layout_constraintTop_toBottomOf="@id/chatAquaButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 

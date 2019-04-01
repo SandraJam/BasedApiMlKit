@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         filterButton.setOnClickListener { startActivity(Intent(this, FilterActivity::class.java)) }
         faceContourButton.setOnClickListener { startActivity(Intent(this, FaceContourActivity::class.java)) }
         languageButton.setOnClickListener { startActivity(Intent(this, LanguageIdentificationActivity::class.java)) }
-        chatButton.setOnClickListener { startActivity(Intent(this, SmartReplyActivity::class.java)) }
+        chatAquaButton.setOnClickListener { startActivity(Intent(this, SmartReplyActivity::class.java).putExtra("pseudo", "Aqua")) }
+        chatMeguminButton.setOnClickListener { startActivity(Intent(this, SmartReplyActivity::class.java).putExtra("pseudo", "Megumin")) }
     }
 }
