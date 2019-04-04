@@ -9,4 +9,7 @@
     <color name="orange_one">#6FFF5722</color>
     <color name="pink_one">#75FF89A5</color>
     <color name="green_one">#75AEEA00</color>
+
+    <color name="blue_dark_one">#065D80</color>
+    <color name="red_dark_one">#800606</color>
 </resources>
